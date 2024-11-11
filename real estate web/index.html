@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real estate</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <header>
+        <section class="container top-nav1 d-none d-lg-flex justify-content-end">
+            <div class="d-flex justify-content-end">
+                <ul class="d-flex justify-content-between top-nav">
+                    <li><a href="tel:+1231231209">+12312-3-1209</a></li>
+                    <li><a href="#">Sell / Rent Property</a></li>
+                    <li><a href="#">login / register</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="container d-flex justify-content-between main-nav">
+                <img src="./images/illustrations/logo.png" alt="">
+                <div class="d-none d-lg-flex">
+                    <ul class="d-flex justify-content-between nav">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">SERVICES</a></li>
+                        <li><a href="#">PROPERTY</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li><a href="#">GENERIC</a></li>
+                        <li><a href="#">ELEMENTS</a></li>
+                    </ul>
+                </div>
+                <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                    <i class="bi bi-list off"></i>
+                </button>
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                    <div class="offcanvas-header">
+                        <img src="./images/illustrations/logo.png" alt="">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="d-flex flex-column nav">
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">SERVICES</a></li>
+                            <li><a href="#">PROPERTY</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                            <li><a href="#">GENERIC</a></li>
+                            <li><a href="#">ELEMENTS</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="container-fluid hero">
+            <div class="container">
+                <h1 class="heading1">We're Real Estate King</h1>
+            </div>
+            <div class="container hero-form">
+                <div class="row">
+                    <h2 class="col-12 Search">Search Properties For</h2>
+                    <div class="col-12 btn-group d-flex justify-content-center">
+                        <a href="#" class="sell">Sell</a>
+                        <button type="button" class="sell-button">
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+                <form class="container row d-flex justify-content-center">
+                    <select  name="locations" id="locations"  class=" locations col-10 col-md-5 col-lg-3">
+                        <optgroup label="Choose locations" class="optgroup">
+                            <option value="Dhaka">Dhaka</option>
+                            <option value="Rangpur">Rangpur</option>
+                            <option value="Bogra">Bogra</option>
+                        </optgroup>
+                    </select>
+                    <select name="Property Type" id="" class="Property col-10 col-md-5 col-lg-3">
+                        <optgroup label="Property Type">
+                            <option value="Property-type-1">Property type 1</option>
+                            <option value="Property-type-2">Property type 2</option>
+                            <option value="Property-type-3">Property type 3</option>
+                        </optgroup>
+                    </select>
+                    <select name="Bedrooms" id="" class="Bedrooms col-10 col-md-5 col-lg-2">
+                        <optgroup label="Bedrooms">
+                            <option value="one">One</option>
+                            <option value="two">Two</option>
+                            <option value="three">Three</option>
+                        </optgroup>
+                    </select>
+                    <select name="Bedrooms" id="" class="Bedrooms col-10 col-md-5 col-lg-2">
+                        <optgroup label="Bedrooms">
+                            <option value="one">One</option>
+                            <option value="two">Two</option>
+                            <option value="three">Three</option>
+                        </optgroup>
+                    </select>
+                    <div class="range col-10 col-lg-4">
+                        <p>Price Range:</p>
+                        <input type="range" min="0" max="5000" value="1000" step="10">
+                    </div>
+                    <div class="range col-10 col-lg-4">
+                        <p>Area Range(sqm):</p>
+                        <input type="range" min="0" max="5000" value="1000" step="10">
+                    </div>
+                    <a href="#" class="col-10 col-md-4 col-lg-3  hero-submit rounded-pill">
+                        Search <span class="d-none">Properties</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </form>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="section1">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-8 pb-40 section1-head">
+                        <h2>Why we are the best</h2>
+                        <p>Who are in extremely love with eco friendly system.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6  class">
+                        <div class="services">
+                            <h3><span class="bi bi-person"></span>Expert Technicians</h3>
+                            <p>
+                                Usage of the Internet is becoming more common due
+                                to rapid advancement of technology and power.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6  class">
+                        <div class="services">
+                            <h3><span class="bi bi-patch-check"></span>Professional Service</h3>
+                            <p>
+                                Usage of the Internet is becoming more common due
+                                to rapid advancement of technology and power.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6  class">
+                        <div class="services">
+                            <h3><span class="bi bi-telephone"></span>Great Support</h3>
+                            <p>
+                                Usage of the Internet is becoming more common due
+                                to rapid advancement of technology and power.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6  class">
+                        <div class="services">
+                            <h3><span class="bi bi-rocket-takeoff"></span>Technical Skills</h3>
+                            <p>
+                                Usage of the Internet is becoming more common due
+                                to rapid advancement of technology and power.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6  class">
+                        <div class="services">
+                            <h3><span class="bi bi-gem"></span>Highly Recomended</h3>
+                            <p>
+                                Usage of the Internet is becoming more common due
+                                to rapid advancement of technology and power.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6  class">
+                        <div class="services">
+                            <h3><span class="bi bi-chat"></span>Positive Reviews</h3>
+                            <p>
+                                Usage of the Internet is becoming more common due
+                                to rapid advancement of technology and power.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <section class="container-fluid section2-bg ">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-8 pb-40 section2-head">
+                            <h2>Our Top Rated Properties</h2>
+                            <p>Who are in extremely love with eco friendly system.</p>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-lg-4">
+                            <div class="items section2-item">
+                                <div class="item">
+                                    <img class="w-100" src="./images/illustrations/s1.jpg" alt="">
+                                    <span>For Sale</span>
+                                </div>
+                                <div class="details">
+                                    <div class="top d-flex justify-content-between">
+                                        <h3>04 Bed Duplex</h3>
+                                        <h3>$3.5M</h3>
+                                    </div>
+                                    <div class="middle">
+                                        <div class="middle-1 d-flex justify-content-between">
+                                            <p>Bed: 04</p>
+                                            <p>Bath: 03</p>
+                                            <p>Area: 750sqm</p>
+                                        </div>
+                                        <div class="middle-2 d-flex justify-content-between">
+                                            <p>Pool: <span style="color: green;">Yes</span></p>
+                                            <p>Internet: <span style="color: red;">No</span></p>
+                                            <p>Cleaning: <span style="color: red;">No</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom d-flex justify-content-between">
+                                        <p><span class="bi bi-heart"></span> 15 Likes</p>
+                                        <p><span class="bi bi-chat"></span> 02 Comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="items section2-item">
+                                <div class="item">
+                                    <img class="w-100" src="./images/illustrations/s2.jpg" alt="">
+                                    <span>For Sale</span>
+                                </div>
+                                <div class="details">
+                                    <div class="top d-flex justify-content-between">
+                                        <h3>04 Bed Duplex</h3>
+                                        <h3>$3.5M</h3>
+                                    </div>
+                                    <div class="middle">
+                                        <div class="middle-1 d-flex justify-content-between">
+                                            <p>Bed: 04</p>
+                                            <p>Bath: 03</p>
+                                            <p>Area: 750sqm</p>
+                                        </div>
+                                        <div class="middle-2 d-flex justify-content-between">
+                                            <p>Pool: <span style="color: green;">Yes</span></p>
+                                            <p>Internet: <span style="color: red;">No</span></p>
+                                            <p>Cleaning: <span style="color: red;">No</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom d-flex justify-content-between">
+                                        <p><span class="bi bi-heart"></span> 15 Likes</p>
+                                        <p><span class="bi bi-chat"></span> 02 Comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="items section2-item">
+                                <div class="item">
+                                    <img class="w-100" src="./images/illustrations/s3.jpg" alt="">
+                                    <span>For Sale</span>
+                                </div>
+                                <div class="details">
+                                    <div class="top d-flex justify-content-between">
+                                        <h3>04 Bed Duplex</h3>
+                                        <h3>$3.5M</h3>
+                                    </div>
+                                    <div class="middle">
+                                        <div class="middle-1 d-flex justify-content-between">
+                                            <p>Bed: 04</p>
+                                            <p>Bath: 03</p>
+                                            <p>Area: 750sqm</p>
+                                        </div>
+                                        <div class="middle-2 d-flex justify-content-between">
+                                            <p>Pool: <span style="color: green;">Yes</span></p>
+                                            <p>Internet: <span style="color: red;">No</span></p>
+                                            <p>Cleaning: <span style="color: red;">No</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="bottom d-flex justify-content-between">
+                                        <p><span class="bi bi-heart"></span> 15 Likes</p>
+                                        <p><span class="bi bi-chat"></span> 02 Comments</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                    
+                </div>
+            </section>
+        </section>
+        <section class=" section3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 mb-10">
+                        <div class="content-area">
+                            <img class="w-100" src="./images/illustrations/p1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 mb-10">
+                        <div class="content-area">
+                            <img class="w-100" src="./images/illustrations/p2.jpg" alt="">
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 small">
+                                <div class="content-area">
+                                    <img class="w-100" src="./images/illustrations/p3.jpg" alt="">
+                                </div>                                
+                            </div>
+                            <div class="col-lg-6 col-md-6 small">
+                                <div class="content-area">
+                                    <img class="w-100" src="./images/illustrations/p4.jpg" alt="">
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section4 container-fluid ">
+            <div class="row section4-text">
+                <div class="col-12 col-md-4 offset-md-2">
+                    <div class="section4-items ">
+                        <h2 class="pt-5 section4-heading">Why Choose Us</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <div class="section4-items">
+                        <h2 class="section4-heading">Our Properties</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                    <div class="section4-items">
+                        <h2 class="section4-heading">legal notice</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 content-img">
+                    
+                </div>
+            </div>
+        </section>
+        <section class="container pt-5">
+            <div class="row text-center">
+                <div class="col-12 col-md-6 col-lg-3 contact-section">
+                    <h2 class="pb-4">Visit Our Office</h2>
+                    <p>56/8, bir uttam qazi nuruzzaman
+                        road, west panthapath, kalabagan,
+                        Dhanmondi, Dhaka - 1205</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 contact-section">
+                    <h2 class="pb-4">Let's call us</h2>
+                    <p>Phone 01: 012-6532-568-9746<br>
+                        Phone 02: 012-6532-568-9748<br>
+                        FAX: 02-6532-568-746
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 contact-section">
+                    <h2 class="pb-4">Let's Email Us</h2>
+                    <p>hello@colorlib.com <br>
+                        mainhelpinfo@colorlib.com <br>
+                        infohelp@colorlib.com</p>
+                </div>
+                <div class="pb-5 col-12 col-md-6 col-lg-3 contact-section">
+                    <h2 class="pb-4">Customer Support</h2>
+                    <p>support@colorlib.com <br>
+                        emergencysupp@colorlib.com <br>
+                        extremesupp@colorlib.com</p>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.209870420323!2d73.8601753739344!3d18.47415047059308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eaa3aa61852f%3A0x459248b131d8b6c8!2sEnvision%20Computer%20Training%20Institute%20Private%20Limited%20Pune!5e0!3m2!1sen!2sin!4v1725363878834!5m2!1sen!2sin" class="w-100"
+                    height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-12 col-md-6 pt-5 pb-5 main-form">
+                    <input class="w-100  mb-3" type="text" placeholder="Enter Your Name">
+                    <input class="w-100" type="email" placeholder="Enter email address">
+                    <textarea class="w-70" name="" id="" placeholder="message"></textarea>
+                    <a class="rounded-pill" href="#">
+                        Send Message
+                        <i class="bi bi-arrow-right"></i>                        
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer1">
+                        <h2>About Us</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer1">
+                        <h2>Newsletter</h2>
+                        <p>Stay update with our latest</p>
+                        <div class="footer-form btn-group">
+                            <input type="email" placeholder="enter email">
+                            <button type="submit">
+                                <i class="bi bi-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer1">
+                        <h2>Instragram Feed</h2>
+                        <div class="row footer-img">
+                            <div class="col-3">
+                                <img src="./images/illustrations/i1.jpg" alt="">
+                            </div>
+                            <div class="col-3">
+                                <img src="./images/illustrations/i2.jpg" alt="">
+                            </div>
+                            <div class="col-3">
+                                <img src="./images/illustrations/i3.jpg" alt="">
+                            </div>
+                            <div class="col-3">
+                                <img src="./images/illustrations/i4.jpg" alt="">
+                            </div>
+                            <div class="col-3">
+                                <img src="./images/illustrations/i5.jpg" alt="">
+                            </div>
+                            <div class="col-3">
+                                <img src="./images/illustrations/i6.jpg" alt="">
+                            </div>
+                            <div class="col-3">
+                                <img src="./images/illustrations/i7.jpg" alt="">
+                            </div>
+                            <div class="col-3">
+                                <img src="./images/illustrations/i8.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer1">
+                        <h2>Follow Us</h2>
+                        <p>Let us be social</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
